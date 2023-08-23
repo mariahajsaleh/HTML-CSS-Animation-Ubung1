@@ -1,0 +1,1289 @@
+
+
+    /* * * * * * * * * * * * * * * * * * * * * * * * * * *
+        * ****************** gesamten Inhalt
+        * * * * * * * * * * * * * * * * * * * * * * * * * * */
+        * {
+            box-sizing: border-box;
+          }
+        
+    /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+      *  * * * * * * * * *Menü* * *  * * * * * * * * * * * * * * * * * 
+      * * * * * * * * * animation * * * * * * * * * * * * * * * * * */
+          
+            header  {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                background-color: rgba(87, 182, 108, 0.623);
+                box-shadow: 0px 0px 6px darkblue;
+                border-radius: 15px;
+                padding: 5px;
+                height: auto;
+                animation-name: header-1;
+                animation-duration: 1s;
+                animation-timing-function: ease;
+                animation-iteration-count:infinite;
+                overflow: hidden;  
+                }
+       /*------------------------------Ablaufplan header-1------------------------------------------------ */
+       @keyframes header-1 {
+        
+        0% {
+            background-image: linear-gradient( 200deg, rgba(19, 2, 10, 0.725) , rgba(29, 2, 59, 0.768),rgb(2, 37, 17)  );
+            box-shadow:  4px 5px 20px black;
+        }
+        
+        25% {
+            background-image: radial-gradient( circle at center center, rgba(0, 2, 12, 0.725) , rgba(68, 5, 15, 0.768) );
+            box-shadow:  4px 5px 20px rgb(129, 7, 7);
+        }
+        
+        50% {
+            background-image: conic-gradient( rgba(2, 14, 16, 0.892) ,rgba(54, 4, 8, 0.845) );
+            box-shadow:  4px 5px 6px rgb(204, 10, 140);
+           
+        }
+        100% {
+            background-image: conic-gradient( rgb(0, 15, 17) ,rgb(3, 42, 16),rgb(20, 1, 12) );
+        box-shadow:  4px 5px 6px rgb(204, 10, 140);
+         }
+     }
+       /* * * * * * * * * * * * * * * * * * * * * * * * * * *
+         * Menü-logo
+         * * * * * * * * * * * * * * * * * * * * * * * * * * */
+         header .logo{
+            filter: brightness(8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+         }
+         /* * * * * * * * * * * * * * * * * * * * * * * * * * *
+         * Menü-Liste
+         * * * * * * * * * * * * * * * * * * * * * * * * * * */
+         header  ol{
+            padding: 20px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+          margin: 20px;
+          list-style: none;
+        } 
+        /* * * * * * * * * * * * * * * * * * * * * * * * * * *
+         * Menü-Liste
+         * * * * * * * * * * * * * * * * * * * * * * * * * * */
+         header{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+         }
+     
+          /*-----------------------------------------------------------------------------------------------
+        --------------------------Style für A Element im Menü-----------------------------------------------*/
+        header  div a{
+           margin: 10px;
+           padding: 10px;
+           color: white;
+           cursor: pointer;
+           box-shadow: 0px 0px 20px rgba(36, 1, 31, 0.7);
+           font-size: 30px;
+           text-decoration: none;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           text-shadow:0px 0px 20px rgba(74, 5, 64, 0.7) ;
+           font-family:  "sedgwick Ave display", cursive;
+         }
+          /* ----------------------Andere Hintergrundfarbe und----------------------------------
+         *------------------------------- Textfarbe ------------------------------------------*/
+           header  div a:hover {
+            margin-top: 10px;
+            margin-bottom: 10px;
+           padding: 30px;
+           cursor: pointer;
+           color: rgb(11, 11, 11);
+           background-image: linear-gradient(to left, rgba(0, 0, 128, 0.06), rgba(225, 205, 205, 0.625), rgba(255, 0, 179, 0.186), rgba(192, 192, 192, 0.559));
+          box-shadow:  4px 5px 6px rgb(121, 118, 118);
+         border-radius: 15px;
+               } 
+      /*-----------------------------------------------------------------------------------------------
+    ---------------------Breit und Höhe  der klasse DOWNLOAD im Hauptcontainer ----------------*/
+    .DOWNLOAD{
+        width: 180px;
+        height: 100px; 
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border: 1px solid black;
+        padding: 10px;
+        background-color: black;
+        color: beige;
+    }  
+  /*-----------------------------------------------------------------------------------------------
+    ---------------------Breit und Höhe des Bildes in der klasse im Hauptcontainer ----------------*/
+    main .DOWNLOAD img{
+        width: 30px;
+        height: 30px;  
+     }
+    /*--------------------------Style für .main-1 :hier geben sie eine Hintergrundbild-------------
+*-------------------Das Bild bewegt sich nicht beim Scrollen ,----------------------------------
+* --------------------------------und es mittig ist------------------------------------------------
+    -------------------------------------------------------------------------------*/
+    .main-1{
+        font-size: 20px;
+        border: 5px solid gray;
+        padding: 30px;
+        background-image: url(bilder/bg-2.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-repeat: 80%;
+        background-attachment: cover;
+        
+     }
+     .main-1 .laufttext{
+      text-align: left;
+      overflow: hidden;
+      height: 50px;
+      line-height: 50px;
+      animation-name: reinUndRaus;
+      animation-duration: 4s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+     }
+     
+     .main-1 .laufttext h4{
+      overflow: hidden;
+      height: 50px;
+      line-height: 50px;
+     }
+     @keyframes reinUndRaus {
+      /* STANDARD LAUFSCHRIFT */
+      /*
+      from {
+        margin-left: 100%;
+      }
+      to {
+        margin-left: -100%;
+      }*/
+      /* KOMPLEXER LAUFSCHRIFT */
+      0% {
+        margin-left: 100%;
+      }
+      25% {
+         margin-left: 75%;
+        
+        font-size: 90%;
+        font-style: italic;
+      }
+      50% {
+         margin-left: 40%;
+        font-size: 150%;
+        font-style: normal;
+      }
+      100% {
+        margin-left: -100%;
+        font-size: 200%;
+      }
+    }
+    .main-1 .move-1{
+      text-align: left;
+  position: relative;
+  animation: move 10s infinite;
+     }
+     @keyframes move {
+      from {left: 0px;}
+      to {left:35%;}
+    }
+    .main-1 .move-2{
+   text-align: right;
+  position: relative;
+  animation: move2 10s infinite;
+     }
+     @keyframes move2 {
+      from {right: 0px;}
+      to {right:28%;}
+    }
+    /*-----------------------------Style füe die klasse main-2------------------------
+    ---------------------------------und mit flex hat flex-wrap-----wrap---------------------*/
+    .main-2{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+        border: 5px solid gray;
+        padding: 30px;
+        background-image:linear-gradient(white ,white ,white);
+        animation-name: text;
+             animation-duration: 3s;
+             animation-timing-function: ease;
+             animation-iteration-count:infinite;
+             overflow: auto;
+             font-family:  "sedgwick Ave display", cursive;
+     }
+     /*********************Style für die klasse team in der klasse main-2*****************************************
+     ***********************hier geben wir sie hitergroundbild **************************************************
+     *************************fliter und transition*************************************************************/
+     .main-2 .team{
+        width: 50%;
+        height:300px;
+        background-image: url(bilder/foto-1.png);
+        background-size: 80%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        filter: brightness(1);
+        /* Wechseleffekt auf 0,75 Sekunden setzen */
+        transition: 0.75s;
+        overflow: hidden;
+      }
+       /******************** Wenn der Mauszeiger auf dem foto ist.*****************************
+       *********************************************************************************** */
+    .main-2 .team:hover{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        color: rgb(215, 243, 250);
+        font-size: 30px;
+        filter: brightness(1);
+        /* Es ist 350% in der Breite */
+        background-size: 150%;
+        overflow: hidden;
+      }
+      /****************************style für die klasse Text in der klasse main-2**********************/
+      .main-2 .text{
+        line-height: 150%;
+        width: 50%;
+      }
+       /****************************style für die klasse SERVICES in der klasse main-2**********************/
+      .main-2 .SERVICES{
+        text-align: center;
+      }
+      /******************** Wenn der Mauszeiger auf dem foto ist.*****************************
+       *********************************************************************************** */
+    .main-2:hover{
+        border: 5px solid gray;
+        padding: 30px;
+        background-image: radial-gradient( circle at center center, rgba(220, 231, 217, 0.725) , rgba(238, 226, 236, 0.768) );
+        box-shadow:  4px 5px 20px black;
+        color: navy;
+     }
+     /*-----------------------------Style füe die klasse main-3------------------------
+     *******************************mit Grid hat drei Spalten**************************
+    -------------------------------------------------------------------------------*/
+    .main-3{
+       display: grid;
+       grid-template-columns: 33% 33% 33%;
+        border: 5px solid gray;
+        padding: 30px;
+        background-image:linear-gradient(white, rgba(225, 213, 213, 0.742)  ,white);
+       overflow: auto;
+       font-family:  "sedgwick Ave display", cursive;
+     }
+     .main-3 div{
+        text-align: center;
+     }
+      /******************** Wenn der Mauszeiger auf dem foto ist.*****************************
+       *********************************************************************************** */
+    .main-3:hover{
+        border: 5px solid gray;
+        padding: 30px;
+        background-image: conic-gradient( rgba(225, 213, 213, 0.421)  ,rgba(226, 102, 112, 0),rgba(242, 225, 236, 0.733) );
+        box-shadow:  4px 5px 6px rgba(35, 1, 23, 0.901);
+        color: navy;
+     }
+       /**************************************breit und height des fotoes in der klasse main-3*************************
+       ***************************************************************************************************************/
+       .main-3 img{
+        width: 60px;
+        height: 60px;
+        border:none;
+       }
+ /*-----------------------------------------Style füe die klasse main-4---------------------------------------
+-------------------------------------------hier geben wir sie eine Hintergrundbild---------------------------
+*---------------------------------------------Das Bild bewegt sich nicht beim Scrollen ,--------------------------
+* --------------------------------------------------und es mittig ist----------------------------------------------
+*-------------------------------------------------und mit Grid hat vier Splaten----------------------------------*/
+    .main-4{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        border: 5px solid gray;
+        color: aliceblue;
+        padding-top: 90px;
+        font-size: 30px;
+        height: 300px;
+        background-image: url(bilder/foto-9.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-repeat: 80%;
+        background-attachment: cover;
+     }
+      /*-----------------------------------------Style füe die klasse .kreis in der klasse main-4------------
+-------------------------------------------hier geben wir sie eine Hintergrundbild---------------------------
+*---------------------------------------------Das Bild bewegt sich nicht beim Scrollen ,---------------------
+* --------------------------------------------------und es mittig ist---------------------------------------
+*------------------------------------------------und mit flex center-------------------------------------*/
+     .main-4 div .kreis{
+        background-image: url(bilder/skill-shape.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       height: 100px;
+       width: 100px;
+     }
+     .main-4 div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+     }
+     /***********************Style für h3 in der klasse main-4 ********************************/
+     .main-4 div h3{
+        width: 100%;
+        text-align: center;
+     }
+     
+              /******************** Wenn der Mauszeiger auf dem foto ist.*****************************
+          *********************************************************************************** */
+    .main-4:hover{
+      border: 5px solid gray;
+      filter:brightness(2);  
+   }
+      /***********************Style für die klasse main-5 in Hauptcontainer********************************/
+     .main-5{
+        padding: 50px;
+        text-align: center;
+        background-color: white;
+       }
+       /**********************Breit und höhe des bild in der klasse main-5**********************************/
+    .main-5 img{
+           width: 100%;
+           height:100px;
+           padding-left:40%;
+           padding-right:40%;
+           }
+
+
+       /*-----------------------------Style füe div in der  klasse main-6------------------------
+        ---------------------------------hier geben wir sie mit Grid vier Spalten--------------*/
+    .main-6 div{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+         overflow: hidden;  
+      }
+      /*-----------------------------Style füe das p element  in der  klasse main-6------------------------
+        -----------------------------------und display:none--------------------------------------*/
+
+      .main-6 div .div1 .hover p{
+        color: aliceblue;
+        display: none;
+        width: 20px;
+        height: 20px;
+        font-size: 15px;
+        margin: 5px;
+        }
+     /*-----------------------------Style füe klasse hover  in der  klasse main-6------------------------
+    ---------------------------------hier geben wir sie mit flex --center--------------------*/
+        .main-6 div .div1 .hover {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 40px;
+            margin-top: 30px;      
+            width: 280px;
+            height: 250px;
+         }
+
+    /******************** Wenn der Mauszeiger auf dem foto ist.*****************************
+     ***********************************Andere Hintergrundfarbe**************************** */     
+     .main-6 div .div1 .hover:hover{ 
+      background-color: rgba(0, 0, 0, 0.555);
+     }
+ 
+     /******************** Wenn der Mauszeiger auf dem foto ist.*****************************
+     **********************************P Element ***disply:block************************ */
+     .main-6 div .div1 .hover:hover p{
+       display: block;
+      }
+  /*-----------------------------Style füe klasse .div1  in der  klasse main-6------------------------
+    ---------------------------------und animation----------------------------------------------*/
+      .main-6 div .div1{
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        animation-name: mg-1;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        width: 380px; 
+        height: 320px;
+      }
+ /*------------------------------Ablaufplan mg-1------------------------------------------------ */
+      @keyframes mg-1{       
+        0% {
+           
+         background-image: url(bilder/foto-5.png);   
+       
+        }
+        
+        50% {
+           
+           
+            background-image: url(bilder/foto-4.png);
+        }
+        75% {
+           
+         background-image: url(bilder/foto-3.png);
+        }
+        100% {
+         background-image: url(bilder/foto-2.png);
+           
+        }
+        }
+         /*-----------------------------Style füe das p element  in der  klasse main-6------------------------
+        -----------------------------------und display:none--------------------------------------*/
+
+      .main-6 div .div2 .hover p{
+         color: aliceblue;
+         display: none;
+         width: 20px;
+         height: 20px;
+         font-size: 15px;
+         margin: 5px;
+         }
+      /*-----------------------------Style füe klasse hover  in der  klasse main-6------------------------
+     ---------------------------------hier geben wir sie mit flex --center--------------------*/
+         .main-6 div .div2 .hover {
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             margin-left: 40px;
+             margin-top: 30px;      
+             width: 280px;
+             height: 250px;
+          }
+ 
+     /******************** Wenn der Mauszeiger auf dem foto ist.*****************************
+      ***********************************Andere Hintergrundfarbe**************************** */     
+      .main-6 div .div2 .hover:hover{ 
+       background-color: rgba(0, 0, 0, 0.555);
+      }
+  
+      /******************** Wenn der Mauszeiger auf dem foto ist.*****************************
+      **********************************P Element ***disply:block************************ */
+      .main-6 div .div2 .hover:hover p{
+        display: block;
+       }
+   /*-----------------------------Style füe klasse .div2  in der  klasse main-6------------------------
+     ---------------------------------und animation----------------------------------------------*/
+       .main-6 div .div2{
+         background-size: 100%;
+         background-repeat: no-repeat;
+         background-position: center center;
+         animation-name: mg2-1;
+         animation-duration: 3s;
+         animation-timing-function: ease-in-out;
+         animation-iteration-count: infinite;
+         width: 380px; 
+         height: 320px;
+       }
+  /*------------------------------Ablaufplan mg2-1------------------------------------------------ */
+       @keyframes mg2-1{       
+         0% {
+               
+             background-image: url(bilder/foto-3.png);
+         }
+         
+         50% {
+            background-image: url(bilder/foto-2.png);
+           
+         }
+         75% {
+            
+             
+             background-image: url(bilder/foto-5.png);
+         }
+         100% {
+            background-image: url(bilder/foto-4.png);
+            
+         }
+         }
+          /*-----------------------------Style füe das p element  in der  klasse main-6------------------------
+        -----------------------------------und display:none--------------------------------------*/
+
+      .main-6 div .div3 .hover p{
+         color: aliceblue;
+         display: none;
+         width: 20px;
+         height: 20px;
+         font-size: 15px;
+         margin: 5px;
+         }
+      /*-----------------------------Style füe klasse hover  in der  klasse main-6------------------------
+     ---------------------------------hier geben wir sie mit flex --center--------------------*/
+         .main-6 div .div3 .hover {
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             margin-left: 40px;
+             margin-top: 30px;      
+             width: 280px;
+             height: 250px;
+          }
+ 
+     /******************** Wenn der Mauszeiger auf dem foto ist.*****************************
+      ***********************************Andere Hintergrundfarbe**************************** */     
+      .main-6 div .div3 .hover:hover{ 
+       background-color: rgba(0, 0, 0, 0.555);
+      }
+  
+      /******************** Wenn der Mauszeiger auf dem foto ist.*****************************
+      **********************************P Element ***disply:block************************ */
+      .main-6 div .div3 .hover:hover p{
+        display: block;
+       }
+   /*-----------------------------Style füe klasse .div2  in der  klasse main-6------------------------
+     ---------------------------------und animation----------------------------------------------*/
+       .main-6 div .div3{
+         background-size: 100%;
+         background-repeat: no-repeat;
+         background-position: center center;
+         animation-name: mg3-1;
+         animation-duration: 3s;
+         animation-timing-function: ease-in-out;
+         animation-iteration-count: infinite;
+         width: 380px; 
+         height: 320px;
+       }
+  /*------------------------------Ablaufplan mg2-1------------------------------------------------ */
+       @keyframes mg3-1{       
+         0% {
+               
+            background-image: url(bilder/foto-2.png); 
+         }
+         
+         50% {
+            background-image: url(bilder/foto-3.png);
+           
+           
+         }
+         75% {
+            background-image: url(bilder/foto-4.png);
+            
+         }
+         100% {
+           
+            background-image: url(bilder/foto-5.png);
+         }
+         }
+                   /*-----------------------------Style füe das p element  in der  klasse main-6------------------------
+        -----------------------------------und display:none--------------------------------------*/
+
+      .main-6 div .div4 .hover p{
+         color: aliceblue;
+         display: none;
+         width: 20px;
+         height: 20px;
+         font-size: 15px;
+         margin: 5px;
+         }
+      /*-----------------------------Style füe klasse hover  in der  klasse main-6------------------------
+     ---------------------------------hier geben wir sie mit flex --center--------------------*/
+         .main-6 div .div4 .hover {
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             margin-left: 40px;
+             margin-top: 30px;      
+             width: 280px;
+             height: 250px;
+          }
+ 
+     /******************** Wenn der Mauszeiger auf dem foto ist.*****************************
+      ***********************************Andere Hintergrundfarbe**************************** */     
+      .main-6 div .div4 .hover:hover{ 
+       background-color: rgba(0, 0, 0, 0.555);
+      }
+  
+      /******************** Wenn der Mauszeiger auf dem foto ist.*****************************
+      **********************************P Element ***disply:block************************ */
+      .main-6 div .div4 .hover:hover p{
+        display: block;
+       }
+   /*-----------------------------Style füe klasse .div2  in der  klasse main-6------------------------
+     ---------------------------------und animation----------------------------------------------*/
+       .main-6 div .div4{
+         background-size: 100%;
+         background-repeat: no-repeat;
+         background-position: center center;
+         animation-name: mg4-1;
+         animation-duration: 3s;
+         animation-timing-function: ease-in-out;
+         animation-iteration-count: infinite;
+         width: 380px; 
+         height: 320px;
+       }
+  /*------------------------------Ablaufplan mg4-1------------------------------------------------ */
+       @keyframes mg4-1{       
+         0% {
+            background-image: url(bilder/foto-4.png);   
+            
+         }
+         
+         50% {
+            
+            background-image: url(bilder/foto-5.png);
+           
+         }
+         75% {
+            background-image: url(bilder/foto-2.png);
+           
+            
+         }
+         100% {
+            background-image: url(bilder/foto-3.png);
+           
+         }
+         }
+    
+ /*---------------------------------------------------------------------------------------------------------
+ -----------------------------Style füe die klasse main-7------------------------------------------------
+    ------------------------------------------------------------------------------------------------------*/
+    .main-7{
+        background-image: conic-gradient( rgb(0, 15, 17) ,rgb(3, 42, 16),rgb(20, 1, 12) );
+        box-shadow:  4px 5px 6px rgb(146, 139, 143); 
+        color: azure;
+        padding: 20px;
+        text-align: center;
+    }
+     /*-----------------------------Style füe A Element  in der  klasse main-7--------------------------
+    --------------------------------------------------------------------------------------------------------*/
+    .main-7 a{
+        text-decoration: none;
+        color: rgb(216, 216, 226);
+    }
+     /*-----------------------------Style füe div in der  klasse main-6------------------------
+        ---------------------------------hier geben wir sie mit Grid vier Spalten--------------*/
+        .main-8 div{
+         display: grid;
+         grid-template-columns: 25% 25% 25% 25%;
+          overflow: hidden;  
+       }
+       /*-----------------------------Style füe das p element  in der  klasse main-6------------------------
+         -----------------------------------und display:none--------------------------------------*/
+ 
+       .main-8 div .div1 .hover p{
+         color: aliceblue;
+         display: none;
+         width: 20px;
+         height: 20px;
+         font-size: 15px;
+         margin: 5px;
+         }
+
+      /*-----------------------------Style füe klasse hover  in der  klasse main-6------------------------
+     ---------------------------------hier geben wir sie mit flex --center--------------------*/
+         .main-8 div .div1 .hover {
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             margin-left: 40px;
+             margin-top: 40px;
+             margin-bottom:40px;      
+             width: 280px;
+             height: 230px;
+          }
+ 
+     /******************** Wenn der Mauszeiger auf dem foto ist.*****************************
+      ***********************************Andere Hintergrundfarbe**************************** */     
+      .main-8 div .div1 .hover:hover{ 
+       background-color: rgba(0, 0, 0, 0.555);
+      }
+  
+      /******************** Wenn der Mauszeiger auf dem foto ist.*****************************
+      **********************************P Element ***disply:block************************ */
+      .main-8 div .div1 .hover:hover p{
+        display: block;
+        text-align: center;
+       text-align: justify;
+        font-size: 15px;
+       }
+   /*-----------------------------Style füe klasse .div1  in der  klasse main-6------------------------
+     ---------------------------------und animation----------------------------------------------*/
+       .main-8 div .div1{
+         background-size: 100%;
+         background-repeat: no-repeat;
+         background-position: center center;
+         animation-name: mg-2;
+         animation-duration: 3s;
+         animation-timing-function: ease-in-out;
+         animation-iteration-count: infinite;
+         width: 380px; 
+         height: 320px;
+       }
+  /*------------------------------Ablaufplan mg-2------------------------------------------------ */
+       @keyframes mg-2{       
+         0% {
+           
+            background-image: url(bilder/foto-2.png);
+         }
+         
+         50% {
+            background-image: url(bilder/foto-4.png);
+            
+            
+         }
+         75% {
+           
+            background-image: url(bilder/foto-3.png);
+         }
+         100% {
+            background-image: url(bilder/foto-5.png);
+         }
+         }
+       /*-----------------------------Style füe das p element  in der  klasse main-8------------------------
+        -----------------------------------und display:none--------------------------------------*/
+
+      .main-8 div .div2 .hover p{
+         color: aliceblue;
+         display: none;
+         width: 20px;
+         height: 20px;
+         font-size: 15px;
+         margin: 5px;
+         }
+      /*-----------------------------Style füe klasse hover  in der  klasse main-6------------------------
+     ---------------------------------hier geben wir sie mit flex --center--------------------*/
+         .main-8 div .div2 .hover {
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             margin-left: 40px;
+             margin-top: 30px;      
+             width: 280px;
+             height: 250px;
+          }
+ 
+     /******************** Wenn der Mauszeiger auf dem foto ist.*****************************
+      ***********************************Andere Hintergrundfarbe**************************** */     
+      .main-8 div .div2 .hover:hover{ 
+       background-color: rgba(0, 0, 0, 0.555);
+      }
+  
+      /******************** Wenn der Mauszeiger auf dem foto ist.*****************************
+      **********************************P Element ***disply:block************************ */
+      .main-8 div .div2 .hover:hover p{
+        display: block;
+       }
+   /*-----------------------------Style füe klasse .div2  in der  klasse main-6------------------------
+     ---------------------------------und animation----------------------------------------------*/
+       .main-8 div .div2{
+         background-size: 100%;
+         background-repeat: no-repeat;
+         background-position: center center;
+         animation-name: mg2-2;
+         animation-duration: 3s;
+         animation-timing-function: ease-in-out;
+         animation-iteration-count: infinite;
+         width: 380px; 
+         height: 320px;
+       }
+  /*------------------------------Ablaufplan mg4-1------------------------------------------------ */
+       @keyframes mg2-2{       
+         0% {
+            background-image: url(bilder/foto-4.png);   
+            
+         }
+         
+         50% {
+            
+            background-image: url(bilder/foto-5.png);
+           
+         }
+         75% {
+            background-image: url(bilder/foto-2.png);
+           
+            
+         }
+         100% {
+            background-image: url(bilder/foto-3.png);
+           
+         }
+         }
+          /*-----------------------------Style füe das p element  in der  klasse main-6------------------------
+        -----------------------------------und display:none--------------------------------------*/
+
+      .main-8 div .div3 .hover p{
+         color: aliceblue;
+         display: none;
+         width: 20px;
+         height: 20px;
+         font-size: 15px;
+         margin: 5px;
+         }
+      /*-----------------------------Style füe klasse hover  in der  klasse main-6------------------------
+     ---------------------------------hier geben wir sie mit flex --center--------------------*/
+         .main-8 div .div3 .hover {
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             margin-left: 40px;
+             margin-top: 30px;      
+             width: 280px;
+             height: 250px;
+          }
+ 
+     /******************** Wenn der Mauszeiger auf dem foto ist.*****************************
+      ***********************************Andere Hintergrundfarbe**************************** */     
+      .main-8 div .div3 .hover:hover{ 
+       background-color: rgba(0, 0, 0, 0.555);
+      }
+  
+      /******************** Wenn der Mauszeiger auf dem foto ist.*****************************
+      **********************************P Element ***disply:block************************ */
+      .main-8 div .div3 .hover:hover p{
+        display: block;
+       }
+   /*-----------------------------Style füe klasse .div2  in der  klasse main-6------------------------
+     ---------------------------------und animation----------------------------------------------*/
+       .main-8 div .div3{
+         background-size: 100%;
+         background-repeat: no-repeat;
+         background-position: center center;
+         animation-name: mg3-2;
+         animation-duration: 3s;
+         animation-timing-function: ease-in-out;
+         animation-iteration-count: infinite;
+         width: 380px; 
+         height: 320px;
+       }
+  /*------------------------------Ablaufplan mg2-1------------------------------------------------ */
+       @keyframes mg3-2{       
+         0% {
+               
+             background-image: url(bilder/foto-3.png);
+         }
+         
+         50% {
+            background-image: url(bilder/foto-2.png);
+           
+         }
+         75% {
+            
+             
+             background-image: url(bilder/foto-5.png);
+         }
+         100% {
+            background-image: url(bilder/foto-4.png);
+            
+         }
+         }
+          /*-----------------------------Style füe das p element  in der  klasse main-6------------------------
+        -----------------------------------und display:none--------------------------------------*/
+
+      .main-8 div .div4 .hover p{
+         color: aliceblue;
+         display: none;
+         width: 20px;
+         height: 20px;
+         font-size: 15px;
+         margin: 5px;
+         }
+      /*-----------------------------Style füe klasse hover  in der  klasse main-6------------------------
+     ---------------------------------hier geben wir sie mit flex --center--------------------*/
+         .main-8 div .div4 .hover {
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             margin-left: 40px;
+             margin-top: 30px;      
+             width: 280px;
+             height: 250px;
+          }
+ 
+     /******************** Wenn der Mauszeiger auf dem foto ist.*****************************
+      ***********************************Andere Hintergrundfarbe**************************** */     
+      .main-8 div .div4 .hover:hover{ 
+       background-color: rgba(0, 0, 0, 0.555);
+      }
+  
+      /******************** Wenn der Mauszeiger auf dem foto ist.*****************************
+      **********************************P Element ***disply:block************************ */
+      .main-8 div .div4 .hover:hover p{
+        display: block;
+       }
+   /*-----------------------------Style füe klasse .div2  in der  klasse main-6------------------------
+     ---------------------------------und animation----------------------------------------------*/
+       .main-8 div .div4{
+         background-size: 100%;
+         background-repeat: no-repeat;
+         background-position: center center;
+         animation-name: mg4-2;
+         animation-duration: 3s;
+         animation-timing-function: ease-in-out;
+         animation-iteration-count: infinite;
+         width: 380px; 
+         height: 320px;
+       }
+  /*------------------------------Ablaufplan mg2-1------------------------------------------------ */
+       @keyframes mg4-2{       
+         0% {
+               
+            background-image: url(bilder/foto-2.png); 
+         }
+         
+         50% {
+            background-image: url(bilder/foto-3.png);
+           
+           
+         }
+         75% {
+            background-image: url(bilder/foto-4.png);
+            
+         }
+         100% {
+           
+            background-image: url(bilder/foto-5.png);
+         }
+         }
+       /*-----------------------------Style füe klasse .readmore  in der  klasse main-8------------------------
+     ----------------------------------------------------------------------------------------------------*/   
+       .main-8 .readmore{
+         display: flex;
+         justify-content: center;
+         text-align: center;
+       }
+        /*-----------------------------Style füe A Element  in der  .readmore  in der  klasse main-8-----------
+     --------------------------------------------------------------------------------------------------------*/
+       .main-8 .readmore a{
+        border-radius: 25px;
+        border: solid 3px gray;
+        padding: 20px;
+        text-decoration: none;
+         text-align: center;
+       }
+ 
+    /*------------------------------------------------------------------------------------------------------------
+    ----------------------------Style füe die klasse main-9--------------------------------------------------------
+    ------------------------------hier geben wir sie mit drei vier Spalten-----------------------------------------*/
+    .main-9{
+        padding-left: 40px;
+        margin: 20px;
+        display: grid;
+        grid-template-columns:33% 33% 33%;
+     }
+/*-----------------------------Style füe die klasse schrift in der  klasse main-9--------------------------
+ --------------------------------------------------------------------------------------------------------*/
+     .main-9 .foto .schrift{
+        border: 3px solid black;
+        width: 300px;
+        text-align: center;
+        margin-top:5px; 
+     }
+/*-----------------------------Style füe die klasse .foto-1 in der  klasse main-9--------------------------
+ --------------------------------------------------------------------------------------------------------*/
+     .main-9 .foto .foto-1{
+        border: 1px solid white;
+        width: 300px;
+         height:280px;
+        background-image: url(bilder/foto-7.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+     main .hover img{
+        display: none;
+        width: 32px;
+        height: 32px;
+        margin: 5px;
+     }
+
+     main .main-9 .foto-1 .hover {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 280px;
+     }
+     /******************** Wenn der Mauszeiger auf dem foto ist.*****************************
+      **********************Andere Hintergrundfarbe und display:block für die fotos*************** */  
+     .main-9 .foto .foto-1 .hover:hover{
+      background-color: rgba(27, 2, 2, 0.608);
+     }
+     .main-9 .foto .foto-1:hover img{
+       display: block;
+       }
+    /*-----------------------------Style füe die klasse main-10------------------------
+    ----------------------------------display flex-wrap---wrap---------------------*/
+    .main-10{
+        padding-left: 40px;
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: beige;
+     }
+ 
+ .main-10 .readmore{
+    text-align: center;
+   width: 100%;
+ }
+ .main-10 .readmore a{
+    text-align: center;
+   text-decoration: none;
+ }
+ /*-----------------------------Style füe die klasse main-11------------------------
+    ---------------------------------hat mit grid zwei Spalten------------------------*/
+    .main-11{
+        display: grid;
+       grid-template-columns: 50% 50%; 
+     }
+     /**************************************div*in main-11*****************************************/
+     .main-11 div div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       align-items: center;
+     }
+     /*-------------------hover für -.kam-1 ---------------------------------------- */
+     .main-11 .kam-1:hover{
+        filter: sepia(1);
+     }
+     /*-------------------hover für -.kam-2-------------------------------------------- */
+     .main-11 .kam-2:hover{
+        filter: sepia(1);
+     }
+     
+     .main-11  div{
+        display: flex;
+        justify-content: flex-start; 
+        text-align: center;
+     }
+     /*-------------------Style für die klasse .liniein der klasse .text-2 ------------------------ */
+     .main-11  .text-2 .linie{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100px;
+     }
+  /*-------------------Style für die klasse .kam-2--in der klasse main-11----- ------------------------ */
+     .main-11 .kam-2{
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 0px;
+        padding-right: 10px;
+        margin: 10px;   
+     }
+     /*-------------------Style für die klasse .kam-1--in der klasse main-11----------------------- */
+     .main-11 .kam-1{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+     }
+      /*-------------------Style für die klasse .text-1--in der klasse main-11----------------------- */
+     .main-11 .text-1{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 0px;
+        margin-bottom: 20px;
+     }
+      /*-------------------Style für die klasse .text-2--in der klasse main-11----------------------- */
+     .main-11 .text-2{
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 0px;
+        padding-top: 0px;
+        margin: -25px;
+     }
+        /*-------------------Style für die klasse .liniein1 in  der klasse .text-1 ------------------------ */
+     .main-11   div .linie .linie1{
+        height: 20px;
+        width: 20px;
+        display: flex;
+        justify-content: center;
+     }
+       /*-------------------Style für die klasse .liniein2 in der klasse .text-1 ------------------------ */
+     .main-11 .text-1 .linie  .linie2{
+        height: 270px; 
+        width: 30px;
+        display: flex;
+        justify-content: flex-start; 
+        align-items: flex-start;
+     }
+      /*-------------------Style für die klasse .liniein1 in  der klasse .text-2 ------------------------ */
+     .main-11 .text-2 .linie  .linie2{
+        padding-right: 10px;
+        height: 311px; 
+        width: 30px;
+        display: flex;
+        justify-content: flex-start; 
+        align-items: flex-start;
+     }
+     /*-------------------Style für die klasse .kreis--in der klasse main-11----------------------- */
+     .main-11 .kreis {
+        grid-column-end: span 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100px;
+        margin-left:-40px;
+        margin-top:-40px;
+     }
+     .main-11 .kreis div{
+        height: 90px;
+        width: 90px;
+        background-image: url(bilder/btn-round.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+ 
+
+  /*-----------------------------Style füe die klasse main-12------------------------
+    ----------------------------------display flex-wrap---wrap---------------------*/
+    .main-12{
+        padding-left: 40px;
+   
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 255, 0.101);
+     }
+      /**************************************textarea in der klasse-12*****************************************/ 
+     .main-12 textarea{
+        width: 70%;
+        margin: 50px;
+        border-top: 3px black solid;
+        border-right: none;
+        border-left: none;
+        background-color: rgba(0, 0, 255, 0);
+     }
+     .main-12 div {
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+     }
+       /*************************************button in der klasse-12*****************************************/ 
+     .main-12 div button {
+       font-size: 20px;
+        height: 50px;
+        padding-bottom: 30px;
+        padding-top: 10px;
+        padding-left: 30px;
+        padding-right: 30px; 
+     }
+      /**************************************input in der klasse-12*****************************************/ 
+     .main-12 input{
+        width: 35%;
+        height: 50px;
+        border: none;
+        border-top: 3px black solid;
+        margin: 10px;
+        background-color: rgba(0, 0, 255, 0);
+     }
+     /****************************************h1********************************************/
+     h1{
+        width: 100%;
+        text-align: center;
+     }
+      /****************************************h1********************************************/
+      h2{
+        width: 100%;
+        text-align: center;
+     }
+     /****************************************h4********************************************/
+     h4{
+        width: 100%;
+        text-align: center;
+        color: grey;
+     }
+     /*-----------------------------Style füe die klasse main-13-----------------------
+    --------------------------------------------------------------------------------*/
+     .main-13{
+      line-height: 30px;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      color: gray;
+      padding-left: 400px;
+      padding-right: 400px;
+     }
+     /*--------------------------Fußzeile --------------------------------------------------
+     ---------------------------wir geben sie mit Grid--vier Spalten-------------------------*/
+     footer{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        background-color: rgba(0, 0, 0, 0.803);
+        color: grey;
+        height: 450px;
+       line-height: 30px;
+      padding-left: 200px;
+      padding-right: 200px;
+     }
+     /*-----------------------------------------klasse footer-1 in der Fußzeile--------------------------
+     ----------------------------------------------------------------------------------------------------*/
+     footer .footer-1{
+      padding: 10px;
+     }
+     /*----------------------------------.footer-2------------------------------------------------------*/
+        footer .footer-2{   
+         margin-right: 30px;
+          text-align: justify;
+         }
+         /*----------------------------------.footer-3--------------------------------------------------*/
+        footer .footer-3{   
+         margin-right: 30px;
+          text-align: justify;
+         }
+          /*----------------------------------.footer-4--------------------------------------------------*/
+        footer .footer-4{   
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+         }
+           /*----------------------------------.footer-4--------------------------------------------------*/
+        footer .footer-4 .bilder{ 
+         width: 100%; 
+         display: grid;
+         grid-template-rows: 33% 33% 33%;
+          }
+           /*----------------------------------.footer-4--------------------------------------------------*/
+        footer .footer-4 .bilder div{  
+         width: 100%; 
+         display: grid;
+         grid-template-columns: 10% 90%;
+         max-height: 20px;
+          }
+
+        /*----------------------------------A Element in Fußzeile-----------------------------------------*/
+        footer a{
+         text-decoration: none;
+         font-size: 20px;
+        }
+        /*----------------------------------Breit und Höhe der bilder in Fußzeile----------------------------*/
+        footer .footer-4 img{
+         width: 20px;
+         height: 20px;
+         margin-top: 22px;
+        }
+            
+     /*-------------------nav--------------------------------- */
+     nav{
+        background-color: black;
+        color:gray;
+        font-size: 20px;
+        text-align: center;
+        height: 100px;
+        padding: 50px;
+     }
+
